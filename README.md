@@ -34,8 +34,8 @@ pip install -r requirements.txt
 ```
 
 4. Skapa .env fil i projektets rot med din API-nyckel.
-   ```bash
-   OPEN_AI_API_KEY=din-api-nyckel-här
+```bash
+OPEN_AI_API_KEY=din-api-nyckel-här
 ```
 
 5. Kör programmet:
