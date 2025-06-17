@@ -1,19 +1,51 @@
 # 🚀 OpenAI Python Demo
 
-Ett enkelt och roligt Python-projekt för att **interagera med OpenAI:s API** (GPT-3.5 och GPT-4) direkt i terminalen! 🧠💬  
-Perfekt för dig som vill lära dig hur AI-svar påverkas av olika parametrar som modell, temperatur och rollinstruktioner.
+Ett enkelt, interaktivt Python-projekt för att **kommunicera med OpenAI:s GPT-modeller** (gpt-3.5 och gpt-4) direkt från terminalen. 🧠💬  
+Perfekt för dig som vill experimentera med AI, modellinställningar och få förståelse för hur språkmodeller fungerar i praktiken.
 
 ---
 
 ## ✨ Funktioner
 
-- 🤖 Ställ frågor direkt till GPT-modeller från terminalen
-- 🔄 Byt modell mellan `gpt-3.5-turbo` och `gpt-4`
-- 🎛️ Justera svarens variation med `temperature`
-- 🎭 Ange systemroller (t.ex. "poet", "coach", "komiker") för att styra stil
-- 🔒 Skydda din API-nyckel med `.env` (ingår i `.gitignore`)
+### 🤖 AI-samtal i terminalen  
+Ställ egna frågor till GPT och få naturliga, kontextuella svar direkt i din terminal.
 
----
+### 🔄 Modellval  
+Byt enkelt mellan:
+- `gpt-3.5-turbo` – snabbare och billigare
+- `gpt-4` – mer kapabel, kontextmedveten och kreativ
+
+### 🎭 Systemroller  
+Ange vilken "roll" modellen ska anta. Exempel:
+- `Du är en poet som skriver i Shakespeare-stil.`
+- `Du är en personlig hälsocoach som ger råd om yoga och träning.`
+- `Du är en rolig komiker som skämtar om kod.`
+
+Detta påverkar **ton**, **stil** och **beteende** hos modellen.
+
+### 🎛 Temperaturkontroll (`temperature`)  
+Styr modellens **kreativitet**:
+- `0.2` = Konservativt, förutsägbart
+- `0.7` = Balanserat, kreativt men rimligt
+- `1.0+` = Vild, spontan och fantasifull
+
+Bra för att testa skillnader i **slumpmässighet och variation** i svaren.
+
+### 🧠 Tokenbegränsning (`max_tokens`)  
+Bestäm hur långa svar modellen får ge:
+- Kortare svar = snabbt, koncist
+- Längre svar = djupare förklaring
+
+### 🔁 Flera svar (`n`)  
+Be modellen generera **flera svar på samma fråga**, perfekt för:
+- Jämförelser
+- Brainstorming
+- Användartester
+
+Exempel:
+```python
+n = 3  # Returnerar tre olika svar på samma prompt
+```
 
 ## ⚙️ Installation
 
